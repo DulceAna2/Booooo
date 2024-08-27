@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <link rel="stylesheet" href="ticket.css">
+</head>
+
+<body class="centro">
+    <div id="segunda">
+        <h3>Tienda Virtual</h3>
+    <label for="" name="nombre">Operario</label>
+    <input type="text" id="nombreOperario" value="Juan">
+    <label for="" name="nombre">Producto</label>
+    <input type="text" id="nombreProducto" value="Gaseosa">
+    <label for="">Marca</label>
+    <input type="text" id="marcaProducto" value="Coca-Cola">
+    <label for="" name="cant">Cantidad</label>
+    <input type="number" id="cantidadProducto" name="cant" value="5">
+    <label for="" name="precio">Precio</label>
+    <input type="number" id="precioProducto" name="precio" value="20">
+    <button onclick="cargarCarrito()">Agregar al carrito</button>
+    <!--TARJETA-->
+    <div class="my-3" id="tarjeta">
+        <div class="form-check">
+            <input id="Debito" name="paymentMethod" type="radio" class="form-check-input" checked required="">
+            <label class="form-check-label" for="credit">Tarjeta de Debito</label>
+        </div>
+        <div class="form-check">
+            <input   id="Credito" name="paymentMethod" type="radio" class="form-check-input" checked required="">
+            <label class="form-check-label" for="debit">Tarjeta de Credito</label>
+        </div>
+        <div class="form-check">
+            <input  id="Efectivo" name="paymentMethod" type="radio" class="form-check-input" checked required="">
+            <label class="form-check-label" for="paypal">Efectivo</label>
+        </div>
+    </div>
+    <input type="button" value="Imprimir Ticket" id="imprimir" disabled onclick="Imprimir()"  >
+    </div>
+    <div id="color1">
+        <h3>Ticket de la Tienda</h3>
+        <div id="divPadre" class="card">
+            <p id="operario"></p>
+            <p id="precio"></p>
+
+        </div>
+    </div>
+   
+
+
+
+    <script src="ht.js"></script>
+</body>
+
+</html>
